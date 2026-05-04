@@ -35,7 +35,7 @@ export default function HeroSection() {
         />
 
         {/* Content */}
-        <div className="w-[min(100%,1400px)] mx-auto">
+        <div className="w-[min(100%,1000px)] mx-auto">
           <div
             className="relative z-10 max-w-[600px]"
             style={{ padding: "0 4%", marginTop: "5rem" }}
@@ -58,13 +58,13 @@ export default function HeroSection() {
                 lineHeight: 1.08,
               }}
             >
-              {t("hero_title").split("premium")[0]}
-              <em style={{ fontStyle: "italic", color: "var(--gold-light)" }}>
+              {t("hero_title")}
+              {/* <em style={{ fontStyle: "italic", color: "var(--gold-light)" }}>
                 {t("hero_title").includes("premium")
                   ? "premium" + t("hero_title").split("premium")[1]
                   : ""}
-              </em>
-              {!t("hero_title").includes("premium") && t("hero_title")}
+              </em> */}
+              {/* {!t("hero_title").includes("premium") && t("hero_title")} */}
             </h1>
             <p
               className="text-base mb-10 max-w-[440px]"
